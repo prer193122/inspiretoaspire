@@ -1,0 +1,53 @@
+#include<stdio.h>
+
+double findMedianSortedArrays(int* nums1, int nums1Size, int*nums2, int nums2size)
+{
+int i = 0;
+int j = 0;
+int cnt;
+int x = -1, y = -1;
+
+for (cnt = 0; cnt <= n; cnt++)
+{
+if (i == n)
+{
+x = y;
+y = nums1;
+break;
+}
+else if (j == n)
+{
+x = y;
+y = nums1[0];
+break;
+}
+
+if (nums1[i] < nums2[j])
+{
+x = y;
+y = nums1[i];
+i++;
+}
+else
+{
+x = y;
+y = nums2[j];
+j++;}
+}
+}
+int main()
+{
+int n, i;
+printf(“Enter the size: “);
+scanf(“%d”,&n);
+int nums1, nums2;
+printf(“\n Enter the first Array elements: \n”);
+for(i=0; i<n; i++)
+scanf(“%d”,&a1[i]);
+printf(“\n Enter the Second Array elements: \n”);
+for(i=0; i<n; i++)
+scanf(“%d”,&a2[i]);
+printf("merged array: %d",n);
+printf(“Median: %d”, Calculate_median(nums1, nums2, n));
+return 0;
+}
